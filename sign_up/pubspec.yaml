@@ -1,0 +1,24 @@
+name: sign_up
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.6.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  bloc: ^4.0.0
+  meta: ^1.1.8
+  equatable: ^1.1.1
+  font_awesome_flutter: ^8.8.1
+  rxdart: ^0.23.1
+  user_repository:
+    path: ../user_repository
+  authentication:
+    path: ../authentication
+  validators:
+    path: ../validators
+
+flutter:
+  uses-material-design: true
