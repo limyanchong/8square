@@ -13,9 +13,12 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Login')),
-      body: BlocProvider<LoginBloc>(
-        create: (context) => LoginBloc(userRepository: _userRepository),
-        child: LoginForm(userRepository: _userRepository),
+      body: Container(
+        color: Colors.white,
+        child: BlocProvider<LoginBloc>(
+          create: (context) => LoginBloc(userRepository: _userRepository),
+          child: LoginForm(userRepository: _userRepository),
+        ),
       ),
     );
   }

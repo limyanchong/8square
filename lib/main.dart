@@ -8,6 +8,7 @@ import 'package:login/login.dart';
 
 import 'views/splash_screen.dart';
 import 'views/homepage.dart';
+import 'views/lesson_page.dart';
 import 'views/quiz_page.dart';
 import 'views/loading_page.dart';
 import 'views/quiz_finished_page.dart';
@@ -84,6 +85,9 @@ class App extends StatelessWidget {
           },
         ),
         routes: {
+          '/lesson': (context) {
+            return LessonPage();
+          },
           '/quiz': (context) {
             return BlocBuilder<QuizBloc, QuizState>(
               builder: (context, state) {
